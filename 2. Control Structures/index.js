@@ -7,18 +7,45 @@ const randomNumber = Math.floor((Math.random() * 100) + 1); // feel free to mock
 
 // TODO 2.1 Display "more than fifty" if randomNumber is more than fify
 // Your code here
+// if (randomNumber > 50){
+//     console.log("more than fifty")
+// }
 
 // TODO 2.2 Display whether the random number is odd or even
 // Your code here
+
+// if (randomNumber % 2 == 0){
+//     console.log("Even")
+// }
+// else{
+//     console.log("Odd")
+// }
 
 // TODO 2.3 If the number if a multiple of 3, write "fizz".
 // if the number is a multiple of 5 display "buzz".
 // if the number is divisible by both 3 and 5, display "fizzbuzz". otherwise, display the number
 // Your code here
 
-let toDisplay = ""
+// let toDisplay = randomNumber
+
+// if (toDisplay % 5 == 0){
+//     console.log("buzz")
+// }
+// else if (toDisplay % 3 == 0){
+//     console.log("fizz")
+// }
+// else if(toDisplay % 5 == 0 && toDisplay % 3 == 0){
+//     console.log("fizzbuzz")
+// }
+// else{
+//     console.log(toDisplay)
+// }
+
 // TODO 2.4 Use the ternary conditional operator to set toDisplay to "Even" if randomNumber is even and "Odd" if randomNumber is odd
 // Your code here
+
+toDisplay = randomNumber % 2 == 0 ? "Even" : "Odd"
+
 console.log("toDisplay", toDisplay);
 
 // Checkpoint 2.1 How do you use switch statements and when would you use them? Try researching the answer
